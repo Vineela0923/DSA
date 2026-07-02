@@ -9,7 +9,7 @@ class Solution:
                 length[i + 1] = max(0, length[i] - 1)
             elif c == '#':
                 length[i + 1] = length[i] * 2
-            else:  # '%'
+            else:
                 length[i + 1] = length[i]
         if k >= length[n]:
             return '.'

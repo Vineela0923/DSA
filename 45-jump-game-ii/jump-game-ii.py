@@ -8,5 +8,4 @@ class Solution:
             if i == current_end:
                 jumps += 1
                 current_end = farthest
-        return jumps
-        
+        return jumps   

@@ -9,6 +9,6 @@ class Solution:
                     res.pop()
             elif ch == '#':
                 res.extend(res)
-            else:  #
+            else:
                 res.reverse()
         return ''.join(res)     

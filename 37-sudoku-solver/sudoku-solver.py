@@ -17,7 +17,7 @@ class Solution:
         def backtrack(idx):
             if idx == len(empty):
                 return True
-            r, c = empty[idx]
+            r,c = empty[idx]
             box = (r // 3) * 3 + c // 3
             available = ~(rows[r] | cols[c] | boxes[box]) & 0x1FF
             while available:
